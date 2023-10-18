@@ -776,7 +776,9 @@ text-decoration-line: underline;
   flex-direction: row;
   gap: 8px;
 }
-
+.terms-and-conditions-label{
+  margin-top: -3px;
+}
 .terms-and-conditions-label span {
   font-family: 'Roboto';
   font-size: 14px;
