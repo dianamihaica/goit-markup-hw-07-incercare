@@ -914,3 +914,11 @@ fill: #FFF;
 padding-left: 10px;
 padding-top: 10px;
 }
+/* Tablet*/
+@media screen and (min-width:768px) {
+  
+}
+/*Desktop*/
+@media  screen and (min-width:1158px) {
+  
+}
