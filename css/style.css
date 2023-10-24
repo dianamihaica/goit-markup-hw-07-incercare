@@ -80,11 +80,12 @@ span{
   color: #2196f3;
 }
 .nav-container{
-  display: flex;
-  align-items: center;
-  width: 80%;
-  justify-content: space-between;
-  margin-left: 100px;
+  display: none;
+}
+.menu-button{
+  position: absolute;
+  top:40px;
+  right:40px;
 }
 /* a:hover {
   text-decoration: none;
@@ -323,6 +324,7 @@ address {
   
 }
 .section-second{
+  flex-direction: column;
   display: flex;
   justify-content: center;
   gap:30px;
@@ -330,14 +332,16 @@ address {
   margin-right: 215px;
   margin-top:150px;
 }
-.section-third{
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  gap:30px;
-  margin-top: 50px;
-  
+.section-second-desktop{
+  display: none;
 }
+.section-third-desktop{
+  display: none;
+}
+.section-third{
+  display: none;
+}
+
 .section-team{
   padding-top: 100px;
 }
@@ -914,11 +918,75 @@ fill: #FFF;
 padding-left: 10px;
 padding-top: 10px;
 }
+.js-menu-container{
+  display: none;}
+  .js-menu-container.is-open{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:0;
+    right:0;
+    background-color: #fff;
+    width: 337px;
+    height: 100%;
+    padding: 48px 40px;
+    z-index: 1;
+  }
+  .js-menu-container .js-close-menu{
+    border: none;
+    background: none;
+    cursor: pointer;
+    align-self: flex-end;
+   margin-bottom: 30px;
+  }
+  .js-menu-container .js-close-menu svg{
+    width: 40px;
+    height: 40px;
+  }
+  .menu-drawer-navigation{
+    display: flex;
+    flex-direction: column;
+
+  }
 /* Tablet*/
 @media screen and (min-width:768px) {
   
 }
 /*Desktop*/
 @media  screen and (min-width:1158px) {
-  
+  .menu-button{
+    display: none;
+  }
+  .nav-container{
+    display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  margin-left: 100px;
+  }
+  .section-second-desktop{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    margin-left:215px;
+    margin-right: 215px;
+    margin-top:150px;
+  }
+  .section-second{
+    display: none;
+  }
+  .section-third{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap:30px;
+    margin-top: 50px;
+  }
+  .section-third-desktop{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap:30px;
+    margin-top: 50px;
+  }
 }
