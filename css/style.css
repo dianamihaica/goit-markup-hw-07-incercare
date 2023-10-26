@@ -946,7 +946,16 @@ padding-top: 10px;
   .menu-drawer-navigation{
     display: flex;
     flex-direction: column;
-
+    width: 219px;
+    height: 48px;
+    flex-shrink: 0;
+    color: #212121;
+font-family: Roboto;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.8px;
   }
 /* Tablet*/
 @media screen and (min-width:768px) {
