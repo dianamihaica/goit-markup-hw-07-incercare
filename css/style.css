@@ -11,14 +11,15 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  width: 1200px;
+  width: 1600px;
   justify-content: space-between;
-  padding-left: 15px;
+  /* padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 15px;
   margin-left: 200px;
-  margin-right: 200px;
+  margin-right: 200px; */
+  margin: auto;
   border-bottom: 1px solid #ececec;
   
   .logo {
@@ -324,13 +325,22 @@ address {
   
 }
 .section-second{
-  flex-direction: column;
+  /* flex-direction: column;
   display: flex;
   justify-content: center;
   gap:30px;
   margin-left:215px;
   margin-right: 215px;
-  margin-top:150px;
+  margin-top:150px; */
+
+  display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: auto;
+                padding-left: 15px;
+                padding-right: 15px;
+            padding-bottom: 60px;
 }
 .section-second-desktop{
   display: none;
@@ -348,6 +358,9 @@ address {
 .section-fourth-team{
   background-color: #F5F4FA;
 }
+.section-fourth-team-desktop{
+  display: none;
+}
 .section-fourth h2 {
   color: #212121;
 text-align: center;
@@ -359,15 +372,16 @@ line-height: normal;
 letter-spacing: 1.08px;
 }
 .section-fourth{
-  
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap:30px;
-  box-sizing: border-box;
-  padding: 100px;
-  margin:0px;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 60px;
+  margin-left: 130px;;
 }
+/* .section-fourth-desktop{
+  display: block;
+} */
+
 .info-container{
   display: flex;
   
@@ -959,7 +973,24 @@ letter-spacing: 0.8px;
   }
 /* Tablet*/
 @media screen and (min-width:768px) {
+   .section-second-desktop {
+    display: none;
+}
+
+ .section-second {
   
+  display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: auto;
+                padding-left: 15px;
+                padding-right: 15px;
+            padding-bottom: 60px;
+   
+}
+
+
 }
 /*Desktop*/
 @media  screen and (min-width:1158px) {
@@ -997,5 +1028,23 @@ letter-spacing: 0.8px;
     align-items: center;
     gap:30px;
     margin-top: 50px;
+  }
+  .{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:30px;
+  box-sizing: border-box;
+  padding: 100px;
+  margin:0px;
+  }
+  .section-fourth{
+    display: none;
+  }
+  .section-fourth-team{
+    display: none;
+  }
+  .section-fourth-team-desktop{
+    background-color: #F5F4FA;
   }
 }
